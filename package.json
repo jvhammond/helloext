@@ -11,14 +11,19 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.sayHello",
+        "onCommand:extension.nbrCharacters"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
                 "command": "extension.sayHello",
-                "title": "Hello World"
+                "title": "Hello World: say hello"
+            },
+            {
+                "command": "extension.nbrCharacters",
+                "title": "Hello World: Count number of characters"
             }
         ]
     },
