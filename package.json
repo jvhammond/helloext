@@ -25,7 +25,19 @@
                 "command": "extension.nbrCharacters",
                 "title": "Hello World: Count number of characters"
             }
-        ]
+        ],
+        "menus": {
+            "editor/context": [{
+                "when": "resourceLangId == javascript",
+                "command": "extension.sayHello",
+                "group": "YourGroup@1"
+            },
+            {
+                "when": "resourceLangId == javascript",
+                "command": "extension.nbrCharacters",
+                "group": "YourGroup@1"
+            }]
+        }
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
